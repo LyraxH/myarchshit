@@ -1,0 +1,108 @@
+* { font-family: "JetBrainsMono Nerd Font"; }   
+
+#waybar {
+  border-radius: 22px;
+  background-color: rgba(56,51,102,1); /* 383366 */
+  color: #000000;
+}
+.modules-left{
+  padding-left: 22px;
+}
+.modules-right{
+  padding-right: 22px;
+}
+
+#cpu{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #7461ab;
+}
+#memory{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #a183d4;
+}
+#disk{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #b19be0;
+}
+#window{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #c6aeeb;
+}
+
+#backlight{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #b19be0;
+}
+#pulseaudio{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #a183d4;}
+#clock{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #7461ab;
+}
+
+#network{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #c6aeeb;
+}
+
+
+#custom-apps{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #7461ab;
+}
+#custom-tiled{
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  padding-left: 22px;
+  background-color: #a183d4;
+}
+#custom-float{
+  padding-right: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  background-color: #a183d4;
+}
+#workspaces{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #b19be0;
+}
+
+
+
+#battery{
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: rgba(177, 155, 224, 1); /* #b19be0 */
+}
+/** battery states */
+#battery.critical { color: #c23b22; }
+#battery.warning { color: #fdfd96; }
+#battery.charging{ color: #b2fba5; }
+#battery { 
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 22px;
+  background-color: #7461ab;
+}

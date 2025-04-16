@@ -1,0 +1,117 @@
+[ // full thing start
+    /***************************/
+    /*      T O P  B A R       */
+    /***************************/
+    {
+        "position": "top",
+        "mode": "dock",
+        "gtk-layer-shell": "true",
+        "height": 42.0,
+
+        "modules-left": [
+            "cpu",
+            "memory",
+            "disk"
+        ],
+
+        "modules-center": [
+            "hyprland/window"
+        ],
+
+        "modules-right": [
+            "backlight",
+            "pulseaudio",
+            "clock#time",
+            "clock#date"
+        ],
+        
+        /***************************/
+        /*  M O D U L E S  T O P   */
+        /***************************/
+        "cpu":{
+            "format": "[ CPU: {usage}% ]" // | LOAD: {load} | 
+        },
+        "memory":{
+            "format": "[ RAM: {percentage}% ]" // SWAP: {swapPercentage}
+        },
+        "disk":{
+            "format": "[ DISK {path} {used} used of {total} ]"
+        },
+        "hyprland/window":{
+            "format": "[ {} ]",
+            "rewrite": {
+            }
+        },
+        "backlight":{
+            "format": "[ : {percent}% ]"
+        },
+        "pulseaudio":{
+            "format": "[ :  {volume}% ]",
+            "format-muted": "[  MUTED ]"//"[ : {volume}% ]"
+        },
+        "clock#date":{
+            "format": "[ {:%d-%m-%Y} ]"
+        },
+        "clock#time":{
+            "format":"[ {:%H:%M} ]",
+            "interval": 55
+        }
+
+    },
+    /***************************/
+    /*   B O T T O M  B A R    */
+    /***************************/
+    {
+        "position": "bottom",
+        "mode": "dock",
+        "gtk-layer-shell": "true",
+        "height": 42.0,
+
+        "modules-left": [
+            "custom/apps",
+            "custom/tiled",
+            "custom/float",
+            "hyprland/workspaces"
+        ],
+
+        "modules-center": [
+            "image#arch",
+            "network"
+        ],
+
+        "modules-right": [
+            "battery"
+        ],
+        /***************************/
+        /*  M O D U L E S  B O T   */
+        /***************************/
+        "custom/apps":{
+            "format": "[ APPS ]",
+            "on-click": "exec rofi -show drun"
+        },
+        "custom/tiled":{
+            "format": "[ Tiled |"
+        },
+        "custom/float":{
+            "format": " Float ]"
+        },
+        "hyprland/workspaces":{
+            "format": "[{}]"
+        },
+        "image#arch":{
+            "path": "~/Downloads/pfpslol/arch.png",
+            "size": "32"
+        },
+        "network":{
+            "format-down": "[    wlan0: disconnected ]",
+            "format": "[    wlan0: {essid} | {ipaddr} | {netmask} | {gwaddr} | {signalStrength} | {frequency} GHz ]"
+        },
+        "battery":{
+            "format": "[ {capacity}% | {time} ]", // {health} | {}
+            "states": {
+                "critical": 15,
+                "warning": 30
+            }
+        }
+    }
+] // full thing close
